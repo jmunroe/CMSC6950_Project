@@ -14,3 +14,13 @@ conda install numpy pandas scipy
 conda activate rescale-snow
 ```
 
+Clone the third-party software repo:
+```
+git clone https://github.com/kellykochanski/rescal-snow.git
+cd rescal-snow
+mkdir build
+cmake -Wno-dev -DCMAKE_BUILD_TYPE=Release ..
+make -j 4
+```
+
+
