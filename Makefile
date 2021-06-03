@@ -1,5 +1,14 @@
-default: snow_plot.pdf
+default: report.pdf
 .PHONY : default
+
+report.pdf: report.tex snow_plot.pdf
+	pdflatex report.tex
+	##bibtex ..
+	## pdflatex report.tex
+
+rescal-snow:
+	@echo Please clone and compile rescal-snow
+	@echo See README.md for details
 
 SNO00018_t0.csp.gz: rescal-snow
 	#./rescal ...
