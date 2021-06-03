@@ -10,7 +10,7 @@ Assuming you already have a conda installation such Miniforge installed,
 
 ```
 conda create -n rescal-snow
-conda install numpy pandas scipy
+conda install numpy pandas scipy matplotlib
 conda activate rescale-snow
 ```
 
